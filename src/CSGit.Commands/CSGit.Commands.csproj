@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CSGit.Core\CSGit.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -5,19 +5,16 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{24BC80F4-A475-40C5-B787-557D0B665A29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSGit.Commands", "src\CSGit.Commands\CSGit.Commands.csproj", "{667BAE34-6090-44DF-960C-BC35299DA55F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSGit.Commands", "src\CSGit.Commands\CSGit.Commands.csproj", "{667BAE34-6090-44DF-960C-BC35299DA55F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSGit.Console", "src\CSGit.Console\CSGit.Console.csproj", "{730BBF41-B705-4973-AB7E-57132A643C20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSGit.App", "src\CSGit.Console\CSGit.App.csproj", "{730BBF41-B705-4973-AB7E-57132A643C20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSGit.Core", "src\CSGit.Core\CSGit.Core.csproj", "{41434ADA-DB39-4425-B8DF-9EEC4EA0A7BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSGit.Core", "src\CSGit.Core\CSGit.Core.csproj", "{41434ADA-DB39-4425-B8DF-9EEC4EA0A7BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{667BAE34-6090-44DF-960C-BC35299DA55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -33,9 +30,15 @@ Global
 		{41434ADA-DB39-4425-B8DF-9EEC4EA0A7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41434ADA-DB39-4425-B8DF-9EEC4EA0A7BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{667BAE34-6090-44DF-960C-BC35299DA55F} = {24BC80F4-A475-40C5-B787-557D0B665A29}
 		{730BBF41-B705-4973-AB7E-57132A643C20} = {24BC80F4-A475-40C5-B787-557D0B665A29}
 		{41434ADA-DB39-4425-B8DF-9EEC4EA0A7BE} = {24BC80F4-A475-40C5-B787-557D0B665A29}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DD4218B-BB20-46A9-9406-0A076A651D6D}
 	EndGlobalSection
 EndGlobal
