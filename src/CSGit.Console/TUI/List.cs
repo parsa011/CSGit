@@ -26,14 +26,15 @@ namespace CSGit.App.TUI
 
         public void Render()
         {
+            Console.Clear();
             int i = 1;
             foreach (var item in _list)
             {
                 if (i++ == _index)
-				{
+                {
                     Console.BackgroundColor = ConsoleColor.White;
-					Console.ForegroundColor = ConsoleColor.Black;
-				}
+                    Console.ForegroundColor = ConsoleColor.Black;
+                }
                 string buf = "";
                 if (item.Length > _max_width)
                     buf = string.Concat(item[..(item.Length - _ellipsis.Length - 2)], _ellipsis);
@@ -41,27 +42,26 @@ namespace CSGit.App.TUI
                     buf = item;
                 Console.Write(buf.PadRight(_max_width));
                 Console.ResetColor();
-                Console.Write("\n");
             }
         }
 
-		public void Next()
-		{
-			if (_index <= _list.Count)
-				_index++;
-			Render();
-		}
+        public void Next()
+        {
+            if (_index < _list.Count)
+                _index++;
+            Render();
+        }
 
-		public void Prev()
-		{
-			if (_index > 1)
-				_index--;
-			Render();
-		}
+        public void Prev()
+        {
+            if (_index > 1)
+                _index--;
+            Render();
+        }
 
-		public string Current()
-		{
-			return _list[_index - 1];
-		}
+        public string Current()
+        {
+            return _list[_index - 1];
+        }
     }
 }
